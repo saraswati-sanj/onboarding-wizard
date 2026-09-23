@@ -5,96 +5,144 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #fdfaf8;
+    background: #f7f3ef;
+    color: #332a26;
 }
+
+/* Main container */
 
 .container {
     width: 600px;
     max-width: 90%;
-    margin: 40px auto;
-    padding: 30px;
-    background: #b99f90;
-    border-radius: 10px;
+    margin: 50px auto;
+    padding: 32px;
+    background: #eadfd7;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(80, 55, 40, 0.12);
 }
+
+/* Main heading */
 
 h1 {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #4a3f3a;
+}
+
+h2 {
+    margin-top: 0;
+    color: #4a3f3a;
 }
 
 /* Step indicators */
+
 .steps {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    margin: 25px 0;
+    margin: 25px 0 30px;
 }
 
 .steps span {
-    width: 35px;
-    height: 35px;
-    border: 1px solid #5e290b;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #8f7768;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    color: #5e4d44;
+    background: #f7f3ef;
 }
 
 .steps .active {
-    background: #a24827;
-    color: #fff;
+    background: #a85d3a;
+    border-color: #a85d3a;
+    color: #ffffff;
 }
 
 /* Form step */
+
 .step {
     margin-top: 20px;
 }
 
+/* Labels */
+
 label {
     display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4a3f3a;
 }
+
+/* Inputs and select */
 
 input,
 select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #d0c0c0;
-    border-radius: 5px;
+    padding: 11px 12px;
+    border: 1px solid #c7b7ad;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #332a26;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #a85d3a;
+    box-shadow: 0 0 0 2px rgba(168, 93, 58, 0.12);
 }
 
 /* Checkboxes */
+
 .checkbox {
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 12px 0;
+    font-weight: normal;
 }
 
 .checkbox input {
     width: auto;
-    margin-right: 8px;
+    margin: 0 9px 0 0;
 }
 
 /* Validation errors */
+
 .error {
-    color: red;
+    color: #a83232;
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 6px;
+    margin-bottom: 0;
 }
 
-/* Navigation buttons */
+/* Navigation */
+
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 
+/* Buttons */
+
 button {
-    padding: 9px 18px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    background: #333;
-    color: #fff;
+    background: #4a3f3a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
 }
 
 button:hover {
@@ -102,27 +150,84 @@ button:hover {
 }
 
 /* Saved message */
+
 .saved {
     text-align: center;
-    color: rgba(156, 66, 10, 0.793);
-    font-size: 18px;
-    margin-top: 15px;
+    color: #a85d3a;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 18px;
 }
 
 /* Review page */
+
 .review-section {
-    border: 1px solid #7b2207;
-    padding: 15px;
-    margin-bottom: 15px;
+    border: 2px solid #8f7768;
+    padding: 16px;
+    margin-bottom: 16px;
     border-radius: 8px;
+    background: #fdfaf8;
 }
 
 .review-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 .review-header h3 {
     margin: 0;
+    color: #4a3f3a;
+}
+
+/* Different review sections */
+
+.personal-section {
+    border-color: #9b7865;
+}
+
+.preferences-section {
+    border-color: #7f8f98;
+}
+
+.tech-section {
+    border-color: #7d9278;
+}
+
+/* Review section paragraphs */
+
+.review-section p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Edit buttons */
+
+.review-header button {
+    padding: 7px 14px;
+    font-size: 13px;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 22px;
+        margin: 25px auto;
+    }
+
+    .steps {
+        gap: 10px;
+    }
+
+    .steps span {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navigation {
+        gap: 10px;
+    }
 }
