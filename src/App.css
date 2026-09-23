@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2dac9;
+}
+
+.container {
+    width: 600px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background: #b99f90;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Step indicators */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.steps span {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #5e290b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps .active {
+    background: #a24827;
+    color: #fff;
+}
+
+/* Form step */
+.step {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0c0c0;
+    border-radius: 5px;
+}
+
+/* Checkboxes */
+.checkbox {
+    display: block;
+    margin: 12px 0;
+}
+
+.checkbox input {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Validation errors */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Navigation buttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+button {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Saved message */
+.saved {
+    text-align: center;
+    color: rgba(156, 66, 10, 0.793);
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Review page */
+.review-section {
+    border: 1px solid #7b2207;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-header h3 {
+    margin: 0;
+}
